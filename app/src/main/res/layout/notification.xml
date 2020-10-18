@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:padding="4dip"
+  android:background="@color/white"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <RelativeLayout
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:layout_alignParentTop="true"
+      android:id="@+id/header"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <ImageButton
+        android:layout_alignParentTop="true"
+        android:id="@+id/back"
+        android:layout_centerHorizontal="true"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:text="@string/feedback"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="17sp"/>
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@drawable/ic_more_vert_black_24dp"/>
+
+  </RelativeLayout>
+
+  <TextView
+      android:id="@+id/alarm_title_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:layout_gravity="center"
+      android:textColor="@color/colorAccent"
+      android:textSize="32dip"
+      android:layout_below="@id/header"
+      android:layout_centerHorizontal="true"
+      android:textStyle="bold"
+      android:text="Matin" />
+
+  <ImageView
+      android:id="@+id/clock"
+      android:layout_width="120dp"
+      android:layout_below="@id/alarm_title_text"
+      android:layout_centerHorizontal="true"
+      android:layout_height="120dp"
+      android:src="@drawable/clock"/>
+
+  <ListView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/lv"
+      android:layout_below="@+id/clock"
+      android:layout_above="@+id/dismiss_alarm"/>
+
+    <Button
+      android:id="@+id/dismiss_alarm"
+      android:layout_width="120dp"
+      android:layout_height="wrap_content"
+      android:text="Rejeter"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+      android:onClick="onDismissClick" />
+
+</RelativeLayout>
+

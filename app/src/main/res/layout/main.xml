@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:paddingTop="4sp"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/white">
+
+ <!-- <Button
+    style="@style/widget"
+    android:id="@+id/add_alarm"
+    android:text="Add alarm"
+      android:backgroundTint="@color/colorPrimary"
+      android:textColor="@color/white"
+     />-->
+
+ <RelativeLayout
+     android:paddingTop="10dp"
+     android:paddingBottom="10dp"
+     android:layout_alignParentTop="true"
+     android:id="@+id/header"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+  <ImageButton
+      android:layout_alignParentTop="true"
+      android:id="@+id/back"
+      android:layout_centerHorizontal="true"
+      android:layout_width="35dp"
+      android:layout_height="35dp"
+      android:elevation="@dimen/cardview_default_elevation"
+      android:layout_alignParentStart="true"
+      android:layout_centerVertical="true"
+      android:layout_marginStart="10dp"
+      android:backgroundTint="@color/colorPrimaryDark"
+      android:background="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+
+  <ImageView
+      android:src="@drawable/logo"
+      android:layout_width="80dp"
+      android:layout_height="30dp"
+      android:layout_centerHorizontal="true"
+      android:layout_centerInParent="true"
+      android:text="@string/feedback"
+      android:textColor="@color/colorAccent"
+      android:textStyle="bold"
+      android:textSize="17sp"/>
+
+  <ImageButton
+      android:id="@+id/menu"
+      android:layout_width="35dp"
+      android:layout_height="35dp"
+      android:layout_centerHorizontal="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginEnd="10dp"
+      android:backgroundTint="@color/colorPrimaryDark"
+      android:background="@drawable/ic_more_vert_black_24dp"/>
+
+ </RelativeLayout>
+
+  <ListView
+      android:layout_below="@+id/header"
+    style="@style/widget"
+      android:layout_marginTop="20dp"
+    android:id="@+id/alarm_list" />
+
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/add_alarm"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="@color/colorPrimaryDark"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true"
+      android:src="@drawable/ic_add_black_24dp"
+      android:contentDescription="@string/submit"
+      android:layout_margin="16dp"
+      android:onClick="onAddAlarmClick"/>
+
+
+</RelativeLayout>
+

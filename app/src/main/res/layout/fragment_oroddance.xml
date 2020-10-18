@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Orodoannce">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:layout_below="@+id/header"
+        android:textStyle="bold"
+        android:text="Ordonnance courante."
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/tv1"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/medic"
+        android:layout_below="@id/tv1"
+        android:orientation="horizontal"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"/>
+
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:drawSelectorOnTop="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/medic" />
+
+
+</RelativeLayout>

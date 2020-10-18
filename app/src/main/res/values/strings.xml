@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">SUIFIV</string>
+    <string name="prochain_rendez_vous">Prochain rendez-vous</string>
+    <string name="title_activity_login" translatable="false">Sign in</string>
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password" translatable="false">Password</string>
+    <string name="action_sign_in" translatable="false">Sign in or register</string>
+    <string name="action_sign_in_short" translatable="false">Sign in</string>
+    <string name="welcome" translatable="false">"Welcome !"</string>
+    <string name="invalid_username" translatable="false">Not a valid username</string>
+    <string name="invalid_password" translatable="false">Password must be >5 characters</string>
+    <string name="login_failed" translatable="false">"Login failed"</string>
+    <string name="langue">langue</string>
+    <string name="information_personelle">Information Personnelle</string>
+    <string name="changer">Changer la langue de l\'application</string>
+    <string name="connecter">Connecter</string>
+    <string name="matricule">Matricule</string>
+    <string name="systeme">Il s\'agit d\'un système sécurisé et vous devrez fournir vos informations de connexion pour accéder à votre dossier.</string>
+    <string name="connecter_au_dossier">Connecter au dossier</string>
+    <string name="sur_votre_application_de_suivi">sur votre application de suivi</string>
+    <string name="bonjour_maman">Bonjour Maman</string>
+    <string name="Conseils">Conseils</string>
+    <string name="Regimes">Régimes</string>
+    <string name="Mesures">Mesures</string>
+    <string name="Activitees">Activitées</string>
+    <string name="Ordonnances">Ordonnances</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="feedback">Feed-Back</string>
+    <string name="comment">Comment s\'entrainer</string>
+    <string name="prog_sport">Programme Sportif</string>
+    <string name="votre_fedd">votre Feedback doit être le plus précis possible, pour qu\'on puisse comprendre votre besoin.</string>
+    <string name="votre_mesures">Les valeurs entrés doivent être le plus précis possible, pour qu\'on puisse diagnostiquer votre situation.</string>
+    <string name="Terminer">Terminer</string>
+    <string name="prog_menu">Programme Alimentaire</string>
+    <string name="d_tail">Détail</string>
+    <string name="valeur">valeur</string>
+    <string name="Ajouter">ajouter</string>
+    <string name="submit">submit</string>
+
+    <string-array name="occurence">
+        <item>une fois</item>
+        <item>Semaine</item>
+    </string-array>
+
+    <string-array name="pref_alarm_play_time_entries">
+        <item>10 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>3 minutes</item>
+        <item>5 minutes</item>
+    </string-array>
+
+    <string-array name="pref_alarm_play_time_values">
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>300</item>
+    </string-array>
+    <string name="title_activity_drawer">Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+</resources>

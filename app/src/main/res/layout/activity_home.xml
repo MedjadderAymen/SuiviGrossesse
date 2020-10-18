@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <RelativeLayout
+        android:layout_marginTop="3dp"
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true">
+
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_person_black_24dp" />
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:id="@+id/actionbar"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_more_vert_oceon_24dp" />
+
+    </RelativeLayout>
+
+
+    <com.luseen.spacenavigation.SpaceNavigationView
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        app:active_item_color="@color/white_with_alpha"
+        app:centre_button_color="@color/colorPrimaryDark"
+        app:inactive_item_color="@color/white_with_alpha"
+        app:space_background_color="@color/white_with_alpha"
+        android:elevation="25sp"
+        android:translationZ="2dp"
+        app:centre_button_icon="@drawable/mesure"
+        app:space_item_icon_size="@dimen/space_item_icon_default_size"
+        app:space_item_icon_only_size="@dimen/space_item_icon_only_size"
+        app:space_item_text_size="@dimen/space_item_text_default_size" />
+
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/space"
+        android:layout_below="@+id/relative" />
+
+
+</RelativeLayout>

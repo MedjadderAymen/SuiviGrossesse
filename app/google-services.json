@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "319635620910",
+    "firebase_url": "https://suivigrossesse-a524c.firebaseio.com",
+    "project_id": "suivigrossesse-a524c",
+    "storage_bucket": "suivigrossesse-a524c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319635620910:android:55bb455a638261279f4bbf",
+        "android_client_info": {
+          "package_name": "com.medjay.suivigrossesse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319635620910-m5k5u4i1fk2n9efist4f8sosgaarkpmt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.medjay.suivigrossesse",
+            "certificate_hash": "6409dc4251e7f9b0ec569fc9b9270655cd9c953b"
+          }
+        },
+        {
+          "client_id": "319635620910-rt0jnitcoc9rc062gq6968lvb00nau0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYClVVaNspkO7NzLqFTEVCkfUmM1We3t4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319635620910-rt0jnitcoc9rc062gq6968lvb00nau0m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

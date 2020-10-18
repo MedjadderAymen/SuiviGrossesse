@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailAliments">
+
+    <ImageView
+        android:id="@id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@id/image"
+        android:id="@+id/header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_alignParentTop="true"
+                android:id="@+id/back"
+                android:layout_centerHorizontal="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:elevation="@dimen/cardview_default_elevation"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <ImageButton
+                android:id="@+id/menu"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_more_vert_black_24dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="63dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:text="Pizza Délice" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:layout_below="@+id/header"
+        android:text="Comment s'entrainer "
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/tv1"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv1"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:text="@string/comment"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/content"
+        />
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true">
+
+
+        <View
+            android:id="@+id/center"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@id/person_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="-31dp"
+            android:layout_marginEnd="5dp"
+            android:background="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/person_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="35dp"
+            android:src="@drawable/ic_local_phone_black_24dp"/>
+
+        <TextView
+            android:id="@+id/feed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/feedback"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

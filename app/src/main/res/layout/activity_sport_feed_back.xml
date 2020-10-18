@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SportFeedBack">
+
+
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_alignParentTop="true"
+            android:id="@+id/back"
+            android:layout_centerHorizontal="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:background="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="@string/feedback"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:background="@drawable/ic_more_vert_black_24dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:layout_below="@+id/header"
+        android:textStyle="bold"
+        android:text="@string/prog_sport"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/tv1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:layout_below="@+id/tv1"
+        android:text="@string/votre_fedd"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/content"
+        />
+
+    <ImageView
+        android:id="@+id/mood"
+        android:layout_width="120dp"
+        android:layout_below="@id/content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_mood_bad_black_24dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/feedback"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mood">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/spinner"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@id/textField"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:id="@+id/feed"
+        android:layout_width="match_parent"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:layout_height="53dp"
+        android:background="@drawable/button"
+        android:text="@string/Terminer"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

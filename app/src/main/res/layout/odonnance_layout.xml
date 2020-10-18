@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="3dp"
+    android:layout_margin="@dimen/cardview_default_elevation"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="12dp"
+        app:cardElevation="5dp"
+        android:layout_margin="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ord"
+                android:layout_margin="5dp"
+                android:id="@+id/shop_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Date ordonnace :"
+                android:layout_toEndOf="@id/shop_image"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/tv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv"
+                android:text="2020-08-15"
+                android:layout_toEndOf="@id/shop_image"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/date" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:id="@+id/more"
+                android:layout_marginEnd="10dp"
+                android:layout_alignBottom="@id/shop_image"
+                android:layout_alignParentEnd="true"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

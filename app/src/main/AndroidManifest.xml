@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.medjay.suivigrossesse">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".Drawer"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".MesuresActivity" />
+        <activity android:name=".DetailConseil" />
+        <activity android:name=".MenuFeedBack" />
+        <activity android:name=".SportFeedBack" />
+        <activity android:name=".DetailAliments" />
+        <activity android:name=".OrdonnanceDetaille" />
+        <activity android:name=".Menu" />
+        <activity android:name=".SportDetail" />
+        <activity android:name=".Exercices" />
+        <activity android:name=".home" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Profile" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".splashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Alarm.AlarmMe"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".Alarm.EditAlarm"
+            android:label="Edit alarm" />
+        <activity
+            android:name=".Alarm.AlarmNotification"
+            android:label="Alarm notification" />
+        <activity
+            android:name=".Alarm.Preferences"
+            android:label="Preferences" />
+        <activity
+            android:name=".Alarm.About"
+            android:label="About" />
+
+        <receiver
+            android:name=".Alarm.AlarmReceiver"
+            android:process=":remote" />
+        <receiver android:name=".Alarm.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrdonnanceDetaille">
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_alignParentTop="true"
+            android:id="@+id/back"
+            android:layout_centerHorizontal="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:background="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="@string/feedback"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:background="@drawable/ic_more_vert_black_24dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="Ordonnance"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/header"
+        android:id="@+id/tv0"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="250dp"
+        android:layout_height="3dp"
+        android:layout_below="@+id/tv0"
+        android:layout_alignStart="@id/tv0"
+        android:layout_alignEnd="@+id/tv0"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tv0"
+        android:text="Numero : 5"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tv0"
+        android:text="09-18-2020"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/tv2"
+        />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="1"
+        android:layout_centerInParent="true"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/grideOrd" />
+
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Suivi+</string>
+    <string name="changer">قم بتغيير لغة التطبيق</string>
+    <string name="information_personelle">معلومات شخصية</string>
+    <string name="langue">لغة</string>
+    <string name="prochain_rendez_vous">الاجتماع القادم</string>
+    <string name="systeme">إنه نظام آمن وستحتاج إلى تقديم معلومات تسجيل الدخول الخاصة بك للوصول إلى ملفك.</string>
+    <string name="matricule">رقم التسجيل</string>
+    <string name="connecter">الاتصال</string>
+    <string name="bonjour_maman">صباح الخير أمي</string>
+    <string name="connecter_au_dossier">الاتصال بالمجلد</string>
+    <string name="sur_votre_application_de_suivi">على تطبيق التتبع الخاص بك</string>
+</resources>
