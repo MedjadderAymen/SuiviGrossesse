@@ -14,8 +14,6 @@ import com.medjay.suivigrossesse.R;
 
 import java.util.List;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 public class AlimentsDays_Adapter extends ArrayAdapter<JourneeAlimentaire> {
 

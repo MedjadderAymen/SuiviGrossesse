@@ -18,7 +18,7 @@
         <activity
             android:name=".Drawer"
             android:label="@string/title_activity_drawer"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".MesuresActivity" />
         <activity android:name=".DetailConseil" />
         <activity android:name=".MenuFeedBack" />
